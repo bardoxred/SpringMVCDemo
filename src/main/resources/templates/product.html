@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Spring MVC</title>
+    <link href="http://cdn.jsdelivr.net/webjars/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" media="screen" />
+    <script src="http://cdn.jsdelivr.net/webjars/jquery/3.5.1/jquery.min.js"></script>
+    <link href="../static/index.css" rel="stylesheet" media="screen"/>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+            <h2>Show Product</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-8">
+            <form class="form-group">
+                <div class="form-row">
+                    <label class="col-sm-4 form-control-lg">Product ID:</label>
+                    <div class="col-sm-10">
+                        <p class="form-control-sm" th:text="${product.id}">Product ID</p>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label class="col-sm-4 form-control-lg">Description:</label>
+                    <div class="col-sm-10">
+                        <p class="form-control-sm" th:text="${product.description}">Description</p>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label class="col-sm-4 form-control-lg">Price:</label>
+                    <div class="col-sm-10">
+                        <p class="form-control-sm" th:text="${product.price}">Price</p>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label class="col-sm-4 form-control-lg">Image URL:</label>
+                    <div class="col-sm-10">
+                        <p class="form-control-sm" th:text="${product.imageUrl}">ImageUrl</p>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
